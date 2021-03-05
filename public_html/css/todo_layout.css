@@ -1,0 +1,107 @@
+#grid-container {
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: grid;
+    padding: 1px;
+    grid-template-rows: 6% 94%;
+    grid-template-columns: 12% 88%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px;
+    width:99%;
+    margin:0.3%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#title-div{
+    margin: 0.5%;
+}
+
+#left-sidebar {
+    margin-left: 3%;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#left-sidebar-header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 5%;
+}
+
+#todo-list-header-card{
+    height: 5%;
+}
+
+#dialog{
+    border-radius: 0px;
+    position: absolute;
+    margin: 10% 20%;
+    background-color:red;
+}
+
+
+.left-sidebar-header-text {
+    font-family: 'consolas';
+}
+
+
+
+#left-sidebar-controls {
+    text-align: right;
+}
+
+
+#workspace {
+    border-radius: 0px;
+    margin-right: 0.5%;
+    grid-column: 2 span 1;
+    grid-row: 2 span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#todo-list-items-div{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-section{
+    padding-top: 0.5%;
+    text-align: center;
+}
+
+.list-item-card {
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.task-col {
+    width:25%;
+}
+
+.due-date-col {
+    width:25%;
+}
+
+.status-col {
+    width:25%
+}
+
+.list-controls-col {
+    width:25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item-control {
+    width: 20%;
+}
